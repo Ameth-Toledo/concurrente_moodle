@@ -1,15 +1,19 @@
-package src.main.java.com.gestion.Grupo.infrastructure.adapters;
+package com.gestion.Grupo.infrastructure.adapters;
 
-import src.main.java.com.gestion.Grupo.domain.Grupo_Repository;
-import src.main.java.com.gestion.Grupo.domain.entities.Grupo;
-import src.main.java.com.gestion.core.ConnMySQL;
-
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+
+import com.gestion.Grupo.domain.Grupo_Repository;
+import com.gestion.Grupo.domain.entities.Grupo;
+import com.gestion.core.ConnMySQL;
 
 public class MySQLGrupoRepository implements Grupo_Repository {
     private final ConnMySQL conn;

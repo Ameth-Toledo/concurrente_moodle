@@ -1,15 +1,19 @@
-package src.main.java.com.gestion.Grupo.infrastructure.controllers;
-
-import src.main.java.com.gestion.Grupo.application.CreateGrupo_UseCase;
-import src.main.java.com.gestion.Grupo.domain.entities.Grupo;
-import src.main.java.com.gestion.Grupo.domain.dto.GrupoResponse;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+package com.gestion.Grupo.infrastructure.controllers;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.gestion.Grupo.application.CreateGrupo_UseCase;
+import com.gestion.Grupo.domain.dto.GrupoResponse;
+import com.gestion.Grupo.domain.entities.Grupo;
 
 @RestController
 @RequestMapping("/api/grupos")

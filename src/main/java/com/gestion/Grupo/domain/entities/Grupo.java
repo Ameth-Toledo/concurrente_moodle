@@ -1,4 +1,4 @@
-package src.main.java.com.gestion.Grupo.domain.entities;
+package com.gestion.Grupo.domain.entities;
 
 public class Grupo {
     private Integer id;

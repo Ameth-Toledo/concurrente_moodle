@@ -1,13 +1,14 @@
-package src.main.java.com.gestion.core;
-
-import com.zaxxer.hikari.HikariConfig;
-import com.zaxxer.hikari.HikariDataSource;
-import io.github.cdimascio.dotenv.Dotenv;
+package com.gestion.core;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+
+import com.zaxxer.hikari.HikariConfig;
+import com.zaxxer.hikari.HikariDataSource;
+
+import io.github.cdimascio.dotenv.Dotenv;
 
 public class ConnMySQL {
     private final HikariDataSource dataSource;

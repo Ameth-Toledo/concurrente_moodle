@@ -1,9 +1,10 @@
-package src.main.java.com.gestion.Grupo.domain;
+package com.gestion.Grupo.domain;
 
 
-import src.main.java.com.gestion.Grupo.domain.entities.Grupo;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
+
+import com.gestion.Grupo.domain.entities.Grupo;
 
 public interface Grupo_Repository {
     

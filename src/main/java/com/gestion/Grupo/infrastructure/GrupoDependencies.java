@@ -1,10 +1,11 @@
-package src.main.java.com.gestion.Grupo.infrastructure;
+package com.gestion.Grupo.infrastructure;
 
-import src.main.java.com.gestion.Grupo.application.CreateGrupo_UseCase;
-import src.main.java.com.gestion.Grupo.infrastructure.adapters.MySQLGrupoRepository;
-import src.main.java.com.gestion.core.ConnMySQL;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
+import com.gestion.Grupo.application.CreateGrupo_UseCase;
+import com.gestion.Grupo.infrastructure.adapters.MySQLGrupoRepository;
+import com.gestion.core.ConnMySQL;
 
 @Configuration
 public class GrupoDependencies {

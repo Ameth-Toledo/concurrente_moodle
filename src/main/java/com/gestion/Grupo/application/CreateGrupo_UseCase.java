@@ -1,9 +1,9 @@
-package src.main.java.com.gestion.Grupo.application;
-
-import src.main.java.com.gestion.Grupo.domain.Grupo_Repository;
-import src.main.java.com.gestion.Grupo.domain.entities.Grupo;
+package com.gestion.Grupo.application;
 
 import java.util.concurrent.CompletableFuture;
+
+import com.gestion.Grupo.domain.Grupo_Repository;
+import com.gestion.Grupo.domain.entities.Grupo;
 
 public class CreateGrupo_UseCase {
     private final Grupo_Repository repository;

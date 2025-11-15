@@ -1,8 +1,9 @@
-package src.main.java.com.gestion.Grupo.domain.dto;
+package com.gestion.Grupo.domain.dto;
 
-import src.main.java.com.gestion.Grupo.domain.entities.Grupo;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import com.gestion.Grupo.domain.entities.Grupo;
 
 public class GrupoResponse {
     private Integer id;
